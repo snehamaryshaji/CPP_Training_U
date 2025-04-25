@@ -8,7 +8,7 @@ int main()
 	printf("\n%d \n %f", num, d);
 	scanf("%d",&num);
 	//fflush(stdin)
-	scanf(" %c", &ch);
+	scanf(" %c",&ch);
 	printf("\n %d%c,num");
 	return 0;
 

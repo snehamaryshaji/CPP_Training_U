@@ -15,16 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="digit_freq_count.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="recu_fact_n.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cstyle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="student_score.cpp">
+    <ClCompile Include="qn3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
