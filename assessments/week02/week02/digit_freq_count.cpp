@@ -20,9 +20,6 @@ int main()
 	int num9 = 0;
 	cout << "enter the number" << endl;
 	cin >> num;
-	int numa = num;
-
-		//int ret = get_dig(num);
 		
 while (num != 0)
 {
@@ -58,13 +55,12 @@ while (num != 0)
 		num8++;
 		break;
 	default:
-		break;
 		num9++;
+		break;
 	}
-
-
 	num = num / 10;
 }
+cout << "digit frequencies:" << endl;
 cout << "0:" << num0 << endl;
 cout << "1:" << num1 << endl;
 cout << "2:" << num2 << endl;
