@@ -15,31 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="FileName.cpp">
+    <ClCompile Include="assign1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="usecase.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="qn_4_1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="qn_4_2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mult_table.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mul-horizontal.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="dig_odd_even.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="distinct digit.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="function.cpp">
+    <ClCompile Include="ass2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
