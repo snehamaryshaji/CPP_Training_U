@@ -15,19 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="assign1.cpp">
+    <ClCompile Include="middle_value.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ass2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="qn5_1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="sum_of_n_natural.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="fibannocci.cpp">
+    <ClCompile Include="sum_of_digits.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
