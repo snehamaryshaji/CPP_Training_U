@@ -14,6 +14,7 @@ int main()
 	int num;
 	cout << "enter an intiger" << endl;
 	cin >> num;
-	int add(num);
+	int res = add(num);
+	cout << "sum= " << res << endl;
 	return 0;
 }

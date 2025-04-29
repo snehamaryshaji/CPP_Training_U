@@ -10,6 +10,7 @@ int main()
 	cin >> num1 >> num2 >> num3;
 	int res = middle(num1, num2, num3);
 	cout << "the middle value is" << res << endl;
+
 }
 int middle(int a, int b, int c)
 {

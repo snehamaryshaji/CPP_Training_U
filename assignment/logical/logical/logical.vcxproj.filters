@@ -15,34 +15,34 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="qn1_middle_value.cpp">
+    <ClCompile Include="qn1_lost_tressure_map.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="qn2_sum_of_digits.cpp">
+    <ClCompile Include="qn2_coin_count.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="qn6_sum_is_even.cpp">
+    <ClCompile Include="qn3broken_clock.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="qn4_second_last.cpp">
+    <ClCompile Include="qn4_scrt_msg.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="qn10_making_triangle.cpp">
+    <ClCompile Include="qn5_kings_army.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="qn3_leep_year.cpp">
+    <ClCompile Include="qn6_space_coutdown.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="qn5_hour_to_min.cpp">
+    <ClCompile Include="qn7_scrt_code2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="qn8_swap_2numbers.cpp">
+    <ClCompile Include="qn8_power2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="qn9_power_using_multiplication.cpp">
+    <ClCompile Include="qn9_magicbox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="qn7_new_num.cpp">
+    <ClCompile Include="qn10strange_mc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
