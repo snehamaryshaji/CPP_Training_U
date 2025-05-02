@@ -3,7 +3,7 @@
 #endif
 */
 #include<iostream>
-#define MAXM 40
+#define MAXM 200
 using namespace std;
 void leader(int arr[], int size)
 {

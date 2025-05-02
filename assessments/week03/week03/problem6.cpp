@@ -1,7 +1,7 @@
 
 /*
 * problem  6
-* reverse all su arrays
+* reverse all sub arrays
 */
 #include<iostream>
 #define MAX 200
@@ -29,7 +29,7 @@ int main()
 	{
 		cin >> arr[i];
 	}
-	cout << "enter k value<<endl";
+	cout << "enter k value"<<endl;
 	cin >> k;
 	for (int i = 0;i < n;i += k)
 	{
