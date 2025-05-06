@@ -36,8 +36,9 @@ int main()
 	cout << "enter the sentance" << endl;
 	cin.getline(str, 200);
 	char str2[20] = "are";
+	char str3[20] = "i";
 	int posa=pos(str,str2);
-	int posb = pos2(str);
+	int posb = pos(str, str3);
 		int sum = posa + posb;
 	cout << sum;
 	return 0;
