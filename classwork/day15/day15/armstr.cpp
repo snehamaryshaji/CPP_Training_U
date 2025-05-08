@@ -4,22 +4,22 @@ bool check_arm(int num)
 {
 	int temp = num;
 	int digit = 0;
-	while (num != 0)
-	{
-		digit++;
-		num = num / 10;
-	}
-	int sum = 0;
-	int a_num = temp;
 	while (temp != 0)
 	{
-		int rem = num % 10;
+		digit++;
+		temp = temp / 10;
+	}
+	int sum = 0;
+	temp = num;
+	while (temp != 0)
+	{
+		int rem = temp % 10;
 
 		sum = sum + pow(rem, digit);
-		num = num / 10;
+		temp = temp / 10;
 
 	}
-	if (sum == a_num)
+	if (sum == num)
 	{
 		return true;
 	}
@@ -28,12 +28,11 @@ bool check_arm(int num)
 		return false;
 	}
 }
-void arm(int n)
+void get_digits(int n)
 {
 	for (int i = 1;i <= n;i++)
 	{
-		int res = check_arm(i);
-		if (res)
+		if (check_arm(i))
 		{
 			cout << i << endl;
 		}
@@ -44,5 +43,5 @@ int main()
 	int n;
 	cout << "enter the limit" << endl;
 	cin >> n;
-	arm(n);
+	get_digits(n);
 }

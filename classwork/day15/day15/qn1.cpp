@@ -6,11 +6,12 @@ void triangle(int,int);
 void rectangle(int,int);
 void circle(int);
 void square(int);
-int main(int argc, char argv[])
+int main(int argc, char *argv[])
 {
 	if (argc > 1)
 	{
-		menu(argv[1]);
+		int ch = atoi(argv[1]);
+		menu(ch);
 	}
 	else
 	{
@@ -19,16 +20,21 @@ int main(int argc, char argv[])
 	return 0;
 
 }
+int display()
+{
+	cout << "menu:\n1.triangle\n2.rectangle\n3.circle\n4.square\n" << endl;
+	int ch;
+	cout << "enter the choice" << endl;
+	cin >> ch;
+	return ch;
+}
 void menu(int ch)
 {
 	if (ch == -1)
 	{
 		ch = display();
 	}
-		int choice;
-		cout << "enter the choice" << endl;
-		cin >> choice;
-	switch (choice)
+	switch (ch)
 	{
 	default:
 		cout << "incorrect option" << endl;

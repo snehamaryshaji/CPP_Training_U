@@ -15,31 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="qn1.cpp">
+    <ClCompile Include="secsmall.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="qn2.cpp">
+    <ClCompile Include="duplicate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="space.cpp">
+    <ClCompile Include="star.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="n_natural.cpp">
+    <ClCompile Include="pyramid.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="factorial.cpp">
+    <ClCompile Include="new.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="qn5.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="arr_palindrome.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="armstr.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="gratest.cpp">
+    <ClCompile Include="revstring.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
