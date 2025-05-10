@@ -2,7 +2,7 @@
 */
 #include<iostream>
 using namespace std;
-bool check_prime(int number);
+int check_prime(int number);
 int main()
 {
 	int number;
@@ -14,12 +14,12 @@ int main()
 
 	return 0;
 }
-bool check_prime(int number)
+int check_prime(int number)
 {
-	for (int i = 1;i < number / 2;i++)
+	for (int i = 2;i*i <= number;i++)
 	{
-		if (number % i != 0)
-			return false;
+		if (number % i == 0)
+			return 0;
 	}
-	return true;
+	return 1;
 }

@@ -63,5 +63,14 @@
     <ClCompile Include="prg16.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="prg17.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prg18.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prg19.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
