@@ -5,17 +5,17 @@ int main()
 {
 	int dec;
 	cin >> dec;
-	if (dec == 0)
+	int bin[32];
+	int index = 0;
+	while (dec > 0)
 	{
-		cout << "0";
+		bin[index++] = dec % 2;
+		dec = dec / 2;
+
 	}
-	else
+	for (int i = index-1;i >= 0;i--)
 	{
-		while (dec > 0)
-		{
-			cout << dec % 2;
-			dec=dec / 2;
-		}
+		cout << bin[i];
 	}
 	return 0;
 }

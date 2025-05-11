@@ -1,4 +1,4 @@
-/*diamond pattern*/
+/*hourglass*/
 #include<iostream>
 using namespace std;
 int main()
