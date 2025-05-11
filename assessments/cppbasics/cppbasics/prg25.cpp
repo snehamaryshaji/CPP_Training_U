@@ -1,3 +1,4 @@
+/*check the given string is pallindrome or not*/
 #include<iostream>
 using namespace std;
 int palindrome(char arr[]);
