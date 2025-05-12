@@ -1,3 +1,4 @@
+//replace the multiple blanks with a single blank
 #include<iostream>
 using namespace std;
 void replace_blank(char str[])
