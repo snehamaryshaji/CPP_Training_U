@@ -1,5 +1,6 @@
 /*check two strings anagram or not*/
 #include<iostream>
+#include<cstring>
 using namespace std;
 int main()
 {
