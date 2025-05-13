@@ -1,6 +1,7 @@
 /*check the number is aan armstrong or not
 */
 #include<iostream>
+#include<cmath>
 using namespace std;
 bool check_armstrong(int number);
 int main()
