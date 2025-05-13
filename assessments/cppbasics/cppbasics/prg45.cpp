@@ -1,5 +1,6 @@
 /*program to find max and min value without using comparison operators*/
 #include<iostream>
+#include<cstdlib>
 using namespace std;
 int main()
 {
