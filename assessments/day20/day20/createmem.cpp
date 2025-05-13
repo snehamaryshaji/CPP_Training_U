@@ -1,6 +1,8 @@
 #include "main.h"
-
 void* createMemSpace(void* ptr, int dataTypeSize, int noOfElements)
 {
-	return realloc(ptr, dataTypeSize * noOfElements);
+	void* returnPtr = nullptr;
+
+	returnPtr = realloc(ptr, dataTypeSize * noOfElements);
+	return returnPtr;
 }

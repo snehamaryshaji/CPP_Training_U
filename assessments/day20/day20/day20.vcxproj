@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="add.cpp" />
     <ClCompile Include="createmem.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="view.cpp" />
   </ItemGroup>
   <ItemGroup>

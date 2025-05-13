@@ -1,18 +1,30 @@
 #pragma once
 #include <iostream>
 using namespace std;
+
 #define MONTH_MAX 31 
-#define DAY_ARRAY_SIZE 4 
+#define DAY_ARRAY_SIZE 4
+//#define DEBUG 0
 
 
-int** monthArray = nullptr;
-int* sumArray = nullptr;
-int dayCount = 0;
-const char *  food[DAY_ARRAY_SIZE] = { "BreakFast" , "Lunch" , "Dinner" , "Others " };
+extern int** monthArray;
+extern int* sumArray;
+extern int dayCount;
+
+extern const char* food[DAY_ARRAY_SIZE]
+;
 
 
 
 void* createMemSpace(void* ptr, int dataTypeSize, int sizeOfArra);
-void display(int day)
 
 bool addExpense();
+bool amountAdd(int day, int opt);
+bool addExpenseValidation(int day);
+
+bool viewExpense();
+bool displayDayAll(int day);
+bool displayDay();
+bool displayInRange(int from, int last);
+bool displayMonth();
+bool displayFromTo();
