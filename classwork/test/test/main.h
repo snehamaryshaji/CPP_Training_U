@@ -6,7 +6,7 @@ using namespace std;
 #define MAX_DAYS 31
 #define DAY_ARRAY_SIZE 4
 
-extern const* char food[DAY_ARRAY_SIZE];
+extern const char* food[DAY_ARRAY_SIZE];
 extern int expence[MAX_MONTH][MAX_DAYS][DAY_ARRAY_SIZE];
 extern int sumarry[MAX_MONTH][MAX_DAYS];
 
