@@ -79,11 +79,12 @@ void display_product(PRD inventory[], int& count)
 	cout << "inventory list" << endl;
 	for (int i = 0;i < count;i++)
 	{
+		cout << "     product     " << i << endl;
 		cout <<"id "<< inventory[i].id << endl;
 		cout << "name " << inventory[i].name << endl;
 		cout << "quantity " << inventory[i].quantity << endl;
 		cout << "price " << inventory[i].price << endl;
-		cout << "product " << i << endl;
+		
 	}
 }
 void update_product(PRD inventory[], int& count)
