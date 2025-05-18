@@ -106,9 +106,9 @@ void update_product(PRD inventory[], int& count)
 		return;
 	}
 	cout << "enter new quantity" << endl;
-	cin >> inventory[count].quantity;
+	cin >> inventory[index].quantity;
 	cout << "enter new price" << endl;
-	cin >> inventory[count].price;
+	cin >> inventory[index].price;
 	cout << "product updated successfully" << endl;
 
 }
