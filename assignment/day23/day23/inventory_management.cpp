@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 using namespace std;
 typedef struct product
 {
@@ -12,7 +13,7 @@ void add_product(PRD inventory[], int& count);
 void display_product(PRD inventory[], int& count);
 void update_product(PRD inventory[], int& count);
 void remove_product(PRD inventory[], int& count);
-//void search_product(PRD inventory[], int& count);
+void search_product(PRD inventory[], int& count);
 int main()
 {
 	PRD inventory[100];
@@ -44,12 +45,15 @@ void disply(PRD inventory[],int& count)
 			remove_product(inventory,count);
 			break;
 		case 5:
+			search_product(inventory, count);
+			break;
+		case 6:
 			cout << "exiting..." << endl;
 			break;
 		default:
 			cout << "invalid option" << endl;
 		}
-	} while (choice != 5);
+	} while (choice != 6);
 	return;
 }
 void add_product(PRD inventory[], int& count)
@@ -133,4 +137,23 @@ void remove_product(PRD inventory[], int& count)
 	}
 	count--;
 	cout << "product removed successfully" << endl;
+}
+void search_product(PRD inventory[], int& count)
+{
+	string name;
+	cout << "enter the product name to search" << endl;
+	cin.ignore();
+	getline(cin, name);
+	for (int i = 0;i < count;i++)
+	{
+		if (inventory[i].name == name)
+		{
+			cout << "id " << inventory[i].id << endl;
+			cout << "name " << inventory[i].name << endl;
+			cout << "quantity " << inventory[i].quantity << endl;
+			cout << "price " << inventory[i].price << endl;
+			return;
+		}
+	}
+	cout << "product not found" << endl;
 }
