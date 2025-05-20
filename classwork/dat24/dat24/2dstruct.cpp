@@ -6,16 +6,18 @@ using namespace std;
 typedef struct employee
 {
 	int id;
-	string name;
+	char name[20];
 }EMP;
 int main()
 {
 	//EMP emp[3][5];
 	EMP** e = nullptr;
-	e = (EMP**)malloc(dep * sizeof(EMP*));
+	//e = (EMP**)malloc(dep * sizeof(EMP*));
+	e = new EMP *[dep];
 	for (int i = 0;i < dep;i++)
 	{
-		e[i] = (EMP*)malloc(sizeof(EMP) * noemp);//allocate col my
+		//e[i] = (EMP*)malloc(sizeof(EMP) * noemp);//allocate col my
+		e[i] = new EMP[noemp];
 		cout << "address of e[" << i << "]=" << (unsigned long int)e[i]<<endl;
 	}
 	cout << "enter employee details" << endl;
@@ -24,8 +26,8 @@ int main()
 		cout << "enter employee details for " << (i + 1) << "department" << endl;
 		for (int j = 0;j < noemp;j++)
 		{
-			cout << "id";cin >> e[i]->id;
-			cout << "name";cin >> e[i]->name;
+			cout << "id";cin >> e[i][j].id;
+			cout << "name";cin >> e[i][j].name;
 
 		}
 		cout <<"-----------------------------" << endl;
@@ -35,8 +37,8 @@ int main()
 		cout << " employee details for " << (i + 1) << "department" << endl;
 		for (int j = 0;j < noemp;j++)
 		{
-			cout << "id:";cout<< e[i]->id;
-			cout << "name:";cout<< e[i]->name;
+			cout << "id:";cout<< e[i][j].id;
+			cout << "name:";cout<< e[i][j].name;
 
 		}
 		cout << "-----------------------------" << endl;
