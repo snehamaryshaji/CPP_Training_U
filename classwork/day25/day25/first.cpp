@@ -1,7 +1,5 @@
 #include<iostream>
 using namespace std;
-void get_details(EMP* e);
-void display(EMP* e);
 typedef struct employee
 {
 	int id;
@@ -12,21 +10,18 @@ typedef struct employee
 		int day, month, year;
 	}DATE;
 }	EMP;
-typedef struct salary
-{
-	int salary;
-	int leave;
-};
+void get_details(EMP* e);
+void display(EMP* e);
 
 
 int main()
 	{
-	employee e[100];
-		get_details(e);
-		display(e);
+	    employee e[100];
+		get_details(&e[0]);
+		display(&e[0]);
 		return 0;
 	}
-void get_details(EMP e[])
+void get_details(EMP* e)
 {
 	cout << "enter employee id" << endl;
 	cin >> e->id;
@@ -35,7 +30,7 @@ void get_details(EMP e[])
 	cout << "enter employee designation" << endl;
 	cin >> e->designation;
 }
-void display(EMP e[])
+void display(EMP* e)
 {
 	cout << "employee details" << endl;
 	cout << "name: " << e->name << endl;

@@ -15,10 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="first.cpp">
+    <ClCompile Include="moviereview.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="clss.cpp">
+    <ClCompile Include="bank.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="digitalclovk.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
