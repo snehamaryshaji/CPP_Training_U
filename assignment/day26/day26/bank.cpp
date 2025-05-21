@@ -5,34 +5,28 @@ class atm
 	int balance;
 	string account_holder;
 public:
-	void setBalance();
-	void check_balance();
-	void deposit();
-	void withdraw();
+	atm()//constructor
+	{
+		balance = 50000;
+		account_holder = "snehamary";
+	}
+	int check_balance();
+	void deposit(int amt);
+	void withdraw(int amt);
 };
-void atm:: setBalance()
-{
-	balance = 50000;
-
-}
-void atm::check_balance()
+int atm::check_balance()
 {
 	cout << "account balance" << endl;
 	cout << balance << endl;
+	return balance;
 }
-void atm::deposit()
+void atm::deposit(int amt)
 {
-	int amt;
-	cout << "enter the amount you want to add" << endl;
-	cin >> amt;
 	balance = balance + amt;
 	cout << amt << " added successfully" << endl;
 }
-void atm::withdraw()
+void atm::withdraw(int amt)
 {
-	int amt;
-	cout << "enter the amount you want " << endl;
-	cin >> amt;
 	balance = balance - amt;
 	if (amt <= balance)
 	{
@@ -46,11 +40,10 @@ void atm::withdraw()
 int main()
 {
 	atm s;
-	s.setBalance();
 		int option=0;
 		do {
 
-			cout << "1.check balance\n2.deposit\n3.withdraw\n";
+			cout << "1.check balance\n2.deposit\n3.withdraw\n4.exit\n";
 			cin >> option;
 			switch (option)
 			{
@@ -58,10 +51,16 @@ int main()
 				s.check_balance();
 				break;
 			case 2:
-				s.deposit();
+				int amt;
+				cout << "enter the amount you want to add" << endl;
+				cin >> amt;
+				s.deposit(amt);
 				break;
 			case 3:
-				s.withdraw();
+				int amut;
+				cout << "enter the amount you want " << endl;
+				cin >> amut;
+				s.withdraw(amut);
 				break;
 			case 4:
 				cout << "exiting...." << endl;
