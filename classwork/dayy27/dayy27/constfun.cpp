@@ -11,16 +11,14 @@ class arr
 	int size;
 	int* arry;
 public:
-	//int* set_array();
-	arr();
+	int* set_array();
 	int* asscending_order(int*,int);
 	int* descending_order(int[], int);
 	int largest(int[], int);
 	void disply(int[]);
 };
-arr::arr()
+/*arr::arr()
 {
-	int size;
 	cout << "enter the size of the array" << endl;
 	cin >> size;
 	cout << "enter the " << size << " elements" << endl;
@@ -32,7 +30,8 @@ arr::arr()
 	}
 
 }
-/*int* arr::set_array()
+*/
+int* arr::set_array()
 {
 	cout << "enter elements" << endl;
 	for (int i = 0;i < 10;i++)
@@ -41,7 +40,7 @@ arr::arr()
 	}
 	return arry;
 }
-*/
+
 int* arr:: descending_order(int arry[], int size)
 {
 	for (int i = 0;i < size - 1;i++)
@@ -101,9 +100,9 @@ void arr:: disply(int b[])
 int main()
 {
 	arr c;
-	//int* arry=c.set_array();
-	c.disply(c.asscending_order(c.arry, 10));
-	c.disply(c.descending_order(arry, 10));
-	cout<<c.largest(arry, 10)<<endl;
+	int* arrys=c.set_array();
+	c.disply(c.asscending_order(arrys,10));
+	c.disply(c.descending_order(arrys,10 ));
+	cout<<c.largest(arrys, 10)<<endl;
 	return 0;
 }
