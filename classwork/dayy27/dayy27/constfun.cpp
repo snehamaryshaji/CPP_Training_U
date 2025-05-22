@@ -17,19 +17,20 @@ public:
 };
 int* arr:: set_array()
 {
+	cout << "enter elements" << endl;
 	for (int i = 0;i < 10;i++)
 	{
 		cin >> arry[i];
 	}
 	return arry;
 }
-int* descending_order(int arry[], int size)
+int* arr:: descending_order(int arry[], int size)
 {
 	for (int i = 0;i < size - 1;i++)
 	{
 		for (int j = i + 1;j < size;j++)
 		{
-			if (arry[j] < arry[j])
+			if (arry[i] < arry[j])
 			{
 				arry[i] = arry[j];
 				int temp = arry[i];
@@ -41,13 +42,13 @@ int* descending_order(int arry[], int size)
 	}
 	return arry;
 }
-int* asscending_order(int arry[], int size)
+int* arr::asscending_order(int arry[], int size)
 {
 	for (int i = 0;i < size-1;i++)
 	{
 		for (int j = i+1;j < size;j++)
 		{
-			if (arry[j] >arry[j])
+			if (arry[i] >arry[j])
 			{
 				arry[i] = arry[j];
 				int temp = arry[i];
@@ -59,7 +60,7 @@ int* asscending_order(int arry[], int size)
 	}
 	return arry;
 }
-int largest(int arry[], int size)
+int arr:: largest(int arry[], int size)
 {
 	int largest = arry[0];
 	for (int i = 0;i < size;i++)
@@ -76,7 +77,17 @@ int main()
 {
 	arr c;
 	int* arry=c.set_array();
-	c.asscending_order(arry, 10);
-	c.descending_order(arry, 10);
+	int* a=c.asscending_order(arry, 10);
+	for (int i = 0;i < 10;i++)
+	{
+		cout << a[i] << " ";
+	}
+	cout << endl;
+	int* b=c.descending_order(arry, 10);
+	for (int i = 0;i < 10;i++)
+	{
+		cout << b[i]<<" ";
+	}
+	cout<<c.largest(arry, 10)<<endl;
 	return 0;
 }
