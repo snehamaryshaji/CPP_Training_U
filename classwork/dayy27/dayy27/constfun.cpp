@@ -8,15 +8,31 @@
 using namespace std;
 class arr
 {
-	int arry[10];
+	int size;
+	int* arry;
 public:
-	int* set_array();
-	int* asscending_order(int[],int);
+	//int* set_array();
+	arr();
+	int* asscending_order(int*,int);
 	int* descending_order(int[], int);
 	int largest(int[], int);
 	void disply(int[]);
 };
-int* arr:: set_array()
+arr::arr()
+{
+	int size;
+	cout << "enter the size of the array" << endl;
+	cin >> size;
+	cout << "enter the " << size << " elements" << endl;
+	cout << "enter elements" << endl;
+	   arry = new int[size];
+	for (int i = 0;i < size;i++)
+	{
+		cin >> arry[i];
+	}
+
+}
+/*int* arr::set_array()
 {
 	cout << "enter elements" << endl;
 	for (int i = 0;i < 10;i++)
@@ -25,6 +41,7 @@ int* arr:: set_array()
 	}
 	return arry;
 }
+*/
 int* arr:: descending_order(int arry[], int size)
 {
 	for (int i = 0;i < size - 1;i++)
@@ -43,7 +60,7 @@ int* arr:: descending_order(int arry[], int size)
 	}
 	return arry;
 }
-int* arr::asscending_order(int arry[], int size)
+int* arr::asscending_order(int* arry, int size)
 {
 	for (int i = 0;i < size-1;i++)
 	{
@@ -73,7 +90,7 @@ int arr:: largest(int arry[], int size)
 	return largest;
 
 }
-void disply(int b[])
+void arr:: disply(int b[])
 {
 	for (int i = 0;i < 10;i++)
 	{
@@ -84,9 +101,8 @@ void disply(int b[])
 int main()
 {
 	arr c;
-	int* arry=c.set_array();
-	int* a=c.asscending_order(arry, 10);
-	c.disply(a);
+	//int* arry=c.set_array();
+	c.disply(c.asscending_order(c.arry, 10));
 	c.disply(c.descending_order(arry, 10));
 	cout<<c.largest(arry, 10)<<endl;
 	return 0;
