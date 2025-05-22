@@ -8,8 +8,7 @@
 using namespace std;
 class arr
 {
-	int size;
-	int* arry;
+	int arry[10];
 public:
 	int* set_array();
 	int* asscending_order(int*,int);
