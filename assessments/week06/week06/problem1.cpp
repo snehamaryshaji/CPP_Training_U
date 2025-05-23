@@ -14,41 +14,32 @@ public:
 };
 Flight::Flight(const char name[], int seat)
 {
-	strcpy(Flightname, name);
+	strcpy_s(Flightname, name);
 	total_seat= seat;
 	booked_seat = 0;
 
 }
 bool Flight:: bookSeats(int booking)
 {
-	if (total_seat == booking)
-		return 0;
-	booked_seat = booking;
+	
+	if (total_seat<=total_seat)
+		total_seat += booking;
+	else
+	{
+		cout << "seat not available";
+	}
 	return true;
 
 }
 int Flight:: ShowAvailability()
 {
-	return total_seat - booked_seat;
+	cout << Flightname << total_seat;
+	return 0;
 }
 int main()
 {
 	Flight f1("a1345", 100);
-	if (f1.bookSeats(30))
-	{
-		cout<<"seats available "<<f1.ShowAvailability();
-	}
-	else
-	{
-		cout << "Booking Failed:Not enough space" << endl;
-	}
-	if (f1.bookSeats(80))
-	{
-		cout << "seats available " << f1.ShowAvailability();
-	}
-	else
-	{
-		cout << "Booking Failed:Not enough space" << endl;
-	}
+	f1.bookSeats(30);
+	f1.ShowAvailability();
 	return 0;
 }
