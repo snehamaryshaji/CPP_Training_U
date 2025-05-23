@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cstring>
 using namespace std;
 class DeliveryTip
 {
@@ -13,7 +14,7 @@ public:
 };
 DeliveryTip ::DeliveryTip(const char id[], int amount, int dist)
 {
-	strcpy_s(orderId, id);
+	strcpy(orderId, id);
 	billAmount = amount;
 	distance = dist;
 	tip = 0;

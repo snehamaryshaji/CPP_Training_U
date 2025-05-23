@@ -1,5 +1,6 @@
 /*hotel booking*/
 #include<iostream>
+#include<cstring>
 using namespace std;
 class HotelRoom
 {
@@ -14,7 +15,7 @@ public:
 HotelRoom:: HotelRoom(int num,const char name[])
 {
 	RoomNumber = num;
-		strcpy_s(type, name);
+		strcpy(type, name);
 	isBooked = false;
 }
 bool HotelRoom::bookRoom()

@@ -14,7 +14,7 @@ public:
 };
 Flight::Flight(const char name[], int seat)
 {
-	strcpy_s(Flightname, name);
+	strcpy(Flightname, name);
 	total_seat= seat;
 	booked_seat = 0;
 
