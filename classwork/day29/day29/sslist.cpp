@@ -6,8 +6,8 @@ typedef struct node {
 	struct node* ptr;
 }NODE;
 NODE* createNode();
-int addNodeBeg(NODE*, NODE*);
-int addNodeEnd(NODE*, NODE*);
+int addNodeBeg(NODE*, NODE*&);
+int addNodeEnd(NODE*, NODE*&);
 int dispList(NODE*);
 int main()
 {
@@ -24,7 +24,7 @@ int main()
 		{
 		case 1:
 			nn = createNode();
-			addNodeBeg(nn, head);
+			addNodeBeg(nn,  head);
 			break;
 		case 2:
 			nn = createNode();
@@ -54,7 +54,7 @@ NODE* createNode()
 	nn->ptr = NULL;
 	return nn;
 }
-int addNodeBeg(NODE* nn, NODE* head)
+int addNodeBeg(NODE* nn, NODE*& head)
 {
 	NODE* temp = NULL;
 
@@ -73,7 +73,7 @@ int addNodeBeg(NODE* nn, NODE* head)
 	}
 	return 0;
 }
-int addNodeEnd(NODE*nn, NODE*head)
+int addNodeEnd(NODE*nn, NODE*& head)
 {
 	NODE* temp = NULL;
 	if (head == NULL)
