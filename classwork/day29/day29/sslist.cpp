@@ -12,7 +12,6 @@ int dispList(NODE*);
 int main()
 {
 	NODE* head = NULL;
-	NODE* temp = NULL;
 	NODE* nn = NULL;
 	int ch = 1;
 	int option = 0;
@@ -23,7 +22,7 @@ int main()
 		switch (option)
 		{
 		case 1:
-			nn = createNode();
+		
 			addNodeBeg(nn,  head);
 			break;
 		case 2:

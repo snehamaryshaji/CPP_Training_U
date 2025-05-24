@@ -24,5 +24,8 @@
     <ClCompile Include="sslist.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="slst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
