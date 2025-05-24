@@ -57,19 +57,14 @@ NODE* createNode()
 int addNodeBeg(NODE* nn, NODE*& head)
 {
 	NODE* temp = NULL;
-
 	if (head == NULL)
 	{
 		head = nn;
-		temp = head;
 	}
 	else
 	{
-		temp = head;
+		nn->ptr = head;
 		head = nn;
-		head->ptr = head;
-
-
 	}
 	return 0;
 }
@@ -79,7 +74,6 @@ int addNodeEnd(NODE*nn, NODE*& head)
 	if (head == NULL)
 	{
 		head = nn;
-		temp = head;
 	}
 	else
 	{
