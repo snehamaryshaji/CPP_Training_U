@@ -39,6 +39,8 @@ int elements:: resize()
 	{
 		temp[i] = arr[i];
 	}
+	cout <<"tempr"<< temp << endl;
+	cout<<"arrayy" << arr << endl;
 	delete[] arr;
 	arr = temp;
 	return 0;
@@ -115,8 +117,12 @@ int main()
 	e.push_back(15);
 	e.printArray();
 	cout << "biggest = "<<e.biggest() << endl;
-	cout << "ascending order " << e.sortAsc() << endl;;
-	cout<<"descending order = "<<e.sortDesc()<<endl;
+	cout << "ascending order " << endl;
+	e.sortAsc();
+	e.printArray();
+	cout << "descending order = " << endl;
+	e.sortDesc();
+	e.printArray();
 	cout << "size " << e.getSize()<< endl;
 	cout<<"capacity "<<e.getCapacity()<<endl;
 
