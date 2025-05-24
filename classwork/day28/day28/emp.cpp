@@ -72,12 +72,12 @@ public:
 using namespace std;
 int main()
 {
-	EmpStack ob;
-	ob.push(101, "sneha");
-	ob.push(102, "mary");
-	ob.display();
-	ob.pop();
+	EmpStack s;
+	s.push(101, "sneha");
+	s.push(102, "mary");
+	s.display();
+	s.pop();
 	//ob.pop();
-	ob.display();
+	s.display();
 	return 0;
 }
