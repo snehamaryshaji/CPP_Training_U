@@ -17,7 +17,7 @@ int dispList(NODE*);
 int dispMenu();
 void freeNodes(NODE*);
 NODE* search(NODE*,int);
-//NODE* delete(NODE*, NODE*);
+NODE* delete(NODE*,int);
 
 int main()
 {
@@ -42,6 +42,11 @@ int main()
 			cout << "enter the number" << endl;
 			cin >> num;
 			search(head,num);
+			break;
+		case 6:
+			cout << "enter the number" << endl;
+			cin >> num;
+			head=delete(head, num);
 			break;
 		case 5:
 			ch = 0;
@@ -134,7 +139,7 @@ NODE* search(NODE*head,int num)
 	else
 	{
 		int count = 1;
-		while (temp->next != NULL)
+		while (temp!= NULL)
 		{
 			if (temp->data == num)
 			{
@@ -144,6 +149,38 @@ NODE* search(NODE*head,int num)
 			temp = temp->next;
 			count++;
 			
+		}
+		cout << num << " is not found " << endl;
+
+	}
+	return head;
+
+}
+NODE* delete(NODE* head,int num)
+{
+	
+	NODE* temp = head;
+	NODE* temp2 = head;
+	if (head == NULL)
+	{
+		cout << num << " no element" << endl;
+		return head;
+	}
+	else
+	{
+		while (temp != NULL)
+		{
+			while (temp2->next != NULL)
+			{
+				if (temp2->data == num)
+				{
+					temp->next = temp2->next;
+					free(temp2);
+					return head;
+				}
+				temp2 = temp2->next;
+			}
+			temp = temp->next;
 		}
 		cout << num << " is not found " << endl;
 
