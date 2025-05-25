@@ -17,7 +17,7 @@ int dispList(NODE*);
 int dispMenu();
 void freeNodes(NODE*);
 NODE* search(NODE*,int);
-NODE* delete(NODE*,int);
+NODE* deleteEL(NODE*,int);
 
 int main()
 {
@@ -43,12 +43,12 @@ int main()
 			cin >> num;
 			search(head,num);
 			break;
-		case 6:
+		case 5:
 			cout << "enter the number" << endl;
 			cin >> num;
-			head=delete(head, num);
+			head=deleteEL(head, num);
 			break;
-		case 5:
+		case 6:
 			ch = 0;
 			break;
 		default:
@@ -65,7 +65,7 @@ int dispMenu()
 {
 	int ch;
 	cout << "Press,\n1. Add Node Begining\n2. Add Node End\n";
-	cout << "\t3. Display List\t4.search\n\t5. Exit..\n\tChoice: ";
+	cout << "3. Display List\n4.search\n5.deletenode\n6. Exit..\nChoice: ";
 	cin >> ch;
 	return ch;
 }
@@ -156,7 +156,7 @@ NODE* search(NODE*head,int num)
 	return head;
 
 }
-NODE* delete(NODE* head,int num)
+NODE* deleteEL(NODE* head,int num)
 {
 	
 	NODE* temp = head;
@@ -170,23 +170,25 @@ NODE* delete(NODE* head,int num)
 	{
 		while (temp != NULL)
 		{
-			if (temp->data == num)
+			if (temp->data != num)
+			{
+				temp2 = temp;
+				temp = temp->next;
+			}
+			else
 			{
 				if (temp2 == NULL)
 				{
 					head = temp->next;
-					free(temp);
-					return head;
 				}
 				else
 				{
 					temp2->next = temp->next;
-					free(temp);
-					return head;
 				}
+				free(temp);
+				return head;
 			}
-			temp2 = temp;
-			temp = temp->next;
+
 		}
 		cout << num << "is not found" << endl;
 	}
