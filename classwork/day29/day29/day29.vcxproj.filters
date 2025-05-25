@@ -27,5 +27,8 @@
     <ClCompile Include="slst.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="searchUpdateDlt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
