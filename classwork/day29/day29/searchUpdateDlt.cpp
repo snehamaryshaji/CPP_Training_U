@@ -18,6 +18,8 @@ int dispMenu();
 void freeNodes(NODE*);
 NODE* search(NODE*,int);
 NODE* deleteEL(NODE*,int);
+NODE* update(NODE*, int,int);
+
 
 int main()
 {
@@ -49,6 +51,14 @@ int main()
 			head=deleteEL(head, num);
 			break;
 		case 6:
+			int pos;
+			cout << "enter the pos" << endl;
+			cin >> pos;
+			cout << "enter the number" << endl;
+			cin >> num;
+			head = update(head,num,pos);
+			break;
+		case 7:
 			ch = 0;
 			break;
 		default:
@@ -65,7 +75,7 @@ int dispMenu()
 {
 	int ch;
 	cout << "Press,\n1. Add Node Begining\n2. Add Node End\n";
-	cout << "3. Display List\n4.search\n5.deletenode\n6. Exit..\nChoice: ";
+	cout << "3. Display List\n4.search\n5.deletenode\n6.update\n7. Exit..\nChoice: ";
 	cin >> ch;
 	return ch;
 }
@@ -128,7 +138,7 @@ void freeNodes(NODE* head)
 		head = temp;
 	}
 }
-NODE* search(NODE*head,int num)
+NODE* search(NODE* head,int num)
 {
 	NODE* temp = head;
 	if (head == NULL)
@@ -160,7 +170,7 @@ NODE* deleteEL(NODE* head,int num)
 {
 	
 	NODE* temp = head;
-	NODE* temp2 = NULL;
+	NODE* prev= NULL;
 	if (head == NULL)
 	{
 		cout << num << " no element" << endl;
@@ -172,18 +182,18 @@ NODE* deleteEL(NODE* head,int num)
 		{
 			if (temp->data != num)
 			{
-				temp2 = temp;
+				prev = temp;
 				temp = temp->next;
 			}
 			else
 			{
-				if (temp2 == NULL)
+				if (prev == NULL)
 				{
 					head = temp->next;
 				}
 				else
 				{
-					temp2->next = temp->next;
+					prev->next = temp->next;
 				}
 				free(temp);
 				return head;
@@ -193,5 +203,33 @@ NODE* deleteEL(NODE* head,int num)
 		cout << num << "is not found" << endl;
 	}
 	return head;
+
+}
+NODE* update(NODE* head, int num,int pos)
+{
+	NODE* temp = head;
+	int count = 0;
+	if (head == NULL)
+	{
+		cout << num << " list empty" << endl;
+		return head;
+	}
+	else
+	{
+		while (temp != NULL)
+		{
+			count++;
+			if (count == pos)
+			{
+				temp->data = num;
+			}
+			temp = temp->next;
+
+		}
+		cout << count<< " node found" << endl;
+
+	}
+	return head;
+
 
 }
