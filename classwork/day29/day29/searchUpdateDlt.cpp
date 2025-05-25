@@ -160,7 +160,7 @@ NODE* delete(NODE* head,int num)
 {
 	
 	NODE* temp = head;
-	NODE* temp2 = head;
+	NODE* temp2 = NULL;
 	if (head == NULL)
 	{
 		cout << num << " no element" << endl;
@@ -170,20 +170,25 @@ NODE* delete(NODE* head,int num)
 	{
 		while (temp != NULL)
 		{
-			while (temp2->next != NULL)
+			if (temp->data == num)
 			{
-				if (temp2->data == num)
+				if (temp2 == NULL)
 				{
-					temp->next = temp2->next;
-					free(temp2);
+					head = temp->next;
+					free(temp);
 					return head;
 				}
-				temp2 = temp2->next;
+				else
+				{
+					temp2->next = temp->next;
+					free(temp);
+					return head;
+				}
 			}
+			temp2 = temp;
 			temp = temp->next;
 		}
-		cout << num << " is not found " << endl;
-
+		cout << num << "is not found" << endl;
 	}
 	return head;
 
