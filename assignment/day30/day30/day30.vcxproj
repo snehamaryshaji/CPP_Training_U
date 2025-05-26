@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4d0dd73f-1c77-4186-b686-6230486a7c3a}</ProjectGuid>
+    <ProjectGuid>{d5e45e76-df13-4d0c-b44e-6b6aed718825}</ProjectGuid>
     <RootNamespace>day30</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -127,13 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="node.cpp" />
-    <ClCompile Include="linkedlist.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="linkedlist.h" />
     <ClInclude Include="node.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="emplinkedlist.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="node.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
