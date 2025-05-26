@@ -10,7 +10,8 @@ private:
 	float salary;
 	Node* next;
 public:
-	Node(int i=0,string n="", float s=0) {
+	Node(int i=0,string n="", float s=0) 
+	{
 		id = i;
 		name = n;
 		salary = s;

@@ -2,6 +2,14 @@
 #include <iostream>
 #include "Node.h"
 #include "linkedlist.h"
+int dispMenu()
+{
+	int ch;
+	cout << "Press,\n1. Add employee\n2. display all employee\n";
+	cout << "3.delete employee by id\n4.search employee by name\n5.deletenode\n6.update salary by id\n7. Exit..\nChoice: ";
+	cin >> ch;
+	return ch;
+}
 int LinkedList::addEmployee(int num, string n, float s) {
 
 	//create new node
@@ -102,5 +110,51 @@ bool LinkedList:: search(string n)
 
 	}
 	return false;
+
+}
+bool LinkedList::updateSalary(int id,float newSal)
+{
+		Node* temp = head;
+		if (head == NULL)
+		{
+			cout << id << " list empty" << endl;
+			return false;
+		}
+		else
+		{
+			while (temp != NULL)
+			{
+				if (temp->getId() == id)
+				{
+					temp->setsal(newSal);
+				}
+				temp = temp->getNext();
+
+			}
+			cout << id << " nod not found" << endl;
+
+		}
+		return false;
+
+	}
+int  LinkedList:: countEmpy()
+{
+	Node* temp = head;
+	int count = 1;
+	if (head == NULL)
+	{
+		cout << " list empty" << endl;
+		return 0;
+	}
+	else
+	{
+		while (temp != NULL)
+		{
+			count++;
+			temp = temp->getNext();
+
+		}
+	}
+	return count;
 
 }
