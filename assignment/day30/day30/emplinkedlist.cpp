@@ -2,13 +2,13 @@
 #include <iostream>
 #include "Node.h"
 #include "linkedlist.h"
-int dispMenu()
+int LinkedList::dispMenu()
 {
-	int ch;
+	int ch1;
 	cout << "Press,\n1. Add employee\n2. display all employee\n";
 	cout << "3.delete employee by id\n4.search employee by name\n5.deletenode\n6.update salary by id\n7. Exit..\nChoice: ";
-	cin >> ch;
-	return ch;
+	cin >> ch1;
+	return ch1;
 }
 int LinkedList::addEmployee(int num, string n, float s) {
 
