@@ -14,4 +14,5 @@ public:
 	int addEmployee(int,string,float);
 	bool dltEmpId(int);
 	void display();
+	bool search(string n)
 };

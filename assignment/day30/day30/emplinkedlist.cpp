@@ -76,3 +76,31 @@ bool LinkedList::dltEmpId(int id)
 	return false;
 
 }
+bool LinkedList:: search(string n)
+{
+	Node* temp = head;
+	if (head == NULL)
+	{
+		cout << n << " not element" << endl;
+		return false;
+	}
+	else
+	{
+		int count = 1;
+		while (temp != NULL)
+		{
+			if (temp->getname() == n)
+			{
+				cout << n<< " is found at node " << count << endl;
+				return true;
+			}
+			temp = temp->getNext();
+			count++;
+
+		}
+		cout << n << " is not found " << endl;
+
+	}
+	return false;
+
+}
