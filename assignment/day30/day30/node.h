@@ -15,7 +15,7 @@ public:
 		name = n;
 		salary = s;
 		next = nullptr;
-		cout << "Constr of Node got called: data=" <<endl;
+		//cout << "Constr of Node got called:" <<endl;
 	}
 	int getId();
 	int setId(int);

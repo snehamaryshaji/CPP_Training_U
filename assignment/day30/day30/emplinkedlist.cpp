@@ -29,11 +29,50 @@ void LinkedList::display()
 {
 	Node* temp = head;
 	while (temp != nullptr) {
-		cout << temp->getId() << endl;
 		cout << temp->getname() << endl;
+		cout << temp->getId() << endl;
 		cout << temp->getsal() << endl;
 		cout << "----------------------------" << endl;
 		temp = temp->getNext();
 	}
 	cout << "NULL" << endl;
+}
+bool LinkedList::dltEmpId(int id)
+{
+
+	Node* temp = head;
+	Node* prev = NULL;
+	if (head == NULL)
+	{
+		cout << id << " no element" << endl;
+		return false;
+	}
+	else
+	{
+		while (temp != NULL)
+		{
+			if (temp->getId() != id)
+			{
+				prev = temp;
+				temp = temp->getNext();
+			}
+			else
+			{
+				if (prev == NULL)
+				{
+					head = temp->getNext();
+				}
+				else
+				{
+					prev->getNext() = temp->getNext();
+				}
+				free(temp);
+				return head;
+			}
+
+		}
+		cout << id<< "is not found" << endl;
+	}
+	return true;
+
 }

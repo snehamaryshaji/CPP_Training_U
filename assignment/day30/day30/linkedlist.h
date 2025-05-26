@@ -12,5 +12,6 @@ public:
 	}
 
 	int addEmployee(int,string,float);
+	bool dltEmpId(int);
 	void display();
 };
