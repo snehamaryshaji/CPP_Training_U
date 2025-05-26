@@ -226,7 +226,7 @@ NODE* update(NODE* head, int num,int pos)
 			temp = temp->next;
 
 		}
-		cout << count<< " node found" << endl;
+		cout << count<< " nod not found" << endl;
 
 	}
 	return head;
