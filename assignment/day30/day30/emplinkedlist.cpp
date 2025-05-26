@@ -64,15 +64,15 @@ bool LinkedList::dltEmpId(int id)
 				}
 				else
 				{
-					prev->getNext() = temp->getNext();
+					prev->setNext(temp->getNext()) ;
 				}
-				free(temp);
-				return head;
+				delete temp;
+				return true;
 			}
 
 		}
 		cout << id<< "is not found" << endl;
 	}
-	return true;
+	return false;
 
 }
