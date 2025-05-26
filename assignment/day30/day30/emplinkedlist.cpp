@@ -30,20 +30,20 @@ int LinkedList::addEmployee(int num, string n, float s) {
 		temp->setNext(nn);
 		//cout << "new node added with value: " << temp->getData() <<nn->getData() <<endl;
 	}
+	cout << "employee added: " << n << endl;
 
 	return 0;
 }
 void LinkedList::display()
 {
 	Node* temp = head;
+	cout << "all employees" << endl;
 	while (temp != nullptr) {
-		cout << temp->getname() << endl;
-		cout << temp->getId() << endl;
-		cout << temp->getsal() << endl;
-		cout << "----------------------------" << endl;
+		cout <<"id :" <<temp->getId() << ",";
+		cout<<" NAME: " << temp->getname() << ",";
+		cout<<" salary: " << temp->getsal() << endl;
 		temp = temp->getNext();
 	}
-	cout << "NULL" << endl;
 }
 bool LinkedList::dltEmpId(int id)
 {
@@ -86,6 +86,7 @@ bool LinkedList::dltEmpId(int id)
 }
 bool LinkedList:: search(string n)
 {
+	cout << "search result" << endl;
 	Node* temp = head;
 	if (head == NULL)
 	{
@@ -99,7 +100,10 @@ bool LinkedList:: search(string n)
 		{
 			if (temp->getname() == n)
 			{
-				cout << n<< " is found at node " << count << endl;
+				//cout << n<< " is found at node " << count << endl;
+				cout << "id :" << temp->getId() << ",";
+				cout << " NAME: " << temp->getname() << ",";
+				cout << " salary: " << temp->getsal() << endl;
 				return true;
 			}
 			temp = temp->getNext();
@@ -131,7 +135,7 @@ bool LinkedList::updateSalary(int id,float newSal)
 				temp = temp->getNext();
 
 			}
-			cout << id << " nod not found" << endl;
+			cout << id << " node not found" << endl;
 
 		}
 		return false;
