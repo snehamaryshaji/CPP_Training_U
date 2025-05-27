@@ -51,6 +51,7 @@ public:
 		Student::display();
 		if (result)
 		{
+			cout << "full result " << endl;
 			cout << "total marks : " << total << endl;
 			cout << "avarage marks : " << avg << endl;
 		}
@@ -63,7 +64,7 @@ int main()
 	int arr[3];
 	cout << "enter roll no" << endl;
 	cin >> rollno;
-	cout << "enter name";
+	cout << "enter name" << endl;
 	cin >> name;
 	cout << "enter age" << endl;
 	cin >> age;
@@ -74,8 +75,7 @@ int main()
 
 	}
 	mark s(arr, rollno, name, age);
+	s.calculate();
 	cout << "student info" << endl;
-	s.display(false);
-	cout << "full result " << endl;
 	s.display(true);
 }
