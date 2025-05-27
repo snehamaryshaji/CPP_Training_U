@@ -15,7 +15,6 @@ public:
 	}
 	void display()
 	{
-		cout << "student info" << endl;
 		cout << "roll no: " << roll_no << endl;
 		cout << "name: " << name << endl;
 		cout << "age: " << age << endl;
@@ -50,13 +49,33 @@ public:
 	void display(bool result)
 	{
 		Student::display();
-		cout << "full result " << endl;
-		cout << "total marks : " << total << endl;
-		cout << "avarage marks : " << avg << endl;
-
+		if (result)
+		{
+			cout << "total marks : " << total << endl;
+			cout << "avarage marks : " << avg << endl;
+		}
 	}
 };
 int main()
 {
+	int rollno, age;
+	string name;
+	int arr[3];
+	cout << "enter roll no" << endl;
+	cin >> rollno;
+	cout << "enter name";
+	cin >> name;
+	cout << "enter age" << endl;
+	cin >> age;
+	cout << "enter marks" << endl;
+	for (int i = 0;i < 3 ; i++)
+	{
+		cin >> arr[i];
 
+	}
+	mark s(arr, rollno, name, age);
+	cout << "student info" << endl;
+	s.display();
+	cout << "full result " << endl;
+	s.display(true);
 }
