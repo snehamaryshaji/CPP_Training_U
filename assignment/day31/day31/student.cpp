@@ -75,7 +75,7 @@ int main()
 	}
 	mark s(arr, rollno, name, age);
 	cout << "student info" << endl;
-	s.display();
+	s.display(false);
 	cout << "full result " << endl;
 	s.display(true);
 }
