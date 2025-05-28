@@ -21,5 +21,8 @@
     <ClCompile Include="vehiclerental.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="empSal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

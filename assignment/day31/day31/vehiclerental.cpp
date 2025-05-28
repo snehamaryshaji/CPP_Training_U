@@ -25,34 +25,53 @@ public:
 		}
 		return expense;
 	}
+	void disply(int distance, int days)
+	{
+		cout << "fare without discount: " << c.calculateFare(dist) << endl;
+		cout << "Fare with long-term discount:" << c.calculateFare(dist, days) << endl;
+	}
 
 };
-class car : public Vehicle
+class Car : public Vehicle
 {
-	car(string id, string type, int rate) :Vehicle(id, type, rate){}
+public:
+	Car(string id, string type, int rate) :Vehicle(id, type, rate){}
 };
-class bike : public Vehicle
+class Bike : public Vehicle
 {
-	bike(string id, string type, int rate) :Vehicle(id, type, rate){}
+public:
+	Bike(string id, string type, int rate) :Vehicle(id, type, rate){}
 };
 int main()
 {
 	string type, id;
-	int rate;
+	int rate,day;
+	float dist;
 	cout << "enter type car or bike" << endl;
 	cin >> type;
 	cout << "enter id" << endl;
 	cin >> id;
 	cout << "enter rate" << endl;
 	cin >> rate;
-	if (type == "car")
+	cout << "enter distance" << endl;
+	cin >> dist;
+	cout << "enter days" << endl;
+	cin >> day;
+	Vehicle c(id, type, rate);
+	c.disply(dist, day);
+
+	/*if (type == "car")
 	{
-		car c(id, type, rate);
+		Car c(id, type, rate);
+		cout << "fare without discount " << c.calculateFare(dist) << endl;
+		cout<<"Fare with long-term discount:"<<c.calculateFare(dist, day)<<endl;
 	}
 	else if (type == "bike")
 	{
-		bike c(id, type, rate);
-	}
+		Bike c(id, type, rate);
+		cout << "fare without discount: " << c.calculateFare(dist) << endl;
+		cout << "Fare with long-term discount:" << c.calculateFare(dist, day) << endl;
+	}*/
 
 	return 0;
 }
