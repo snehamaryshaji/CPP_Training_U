@@ -57,10 +57,10 @@ int main()
 	cin >> dist;
 	cout << "enter days" << endl;
 	cin >> day;
-	Vehicle c(id, type, rate);
-	c.disply(dist, day);
+	//Vehicle c(id, type, rate);
+	//c.disply(dist, day);
 
-	/*if (type == "car")
+	if (type == "car")
 	{
 		Car c(id, type, rate);
 		cout << "fare without discount " << c.calculateFare(dist) << endl;
@@ -71,7 +71,7 @@ int main()
 		Bike c(id, type, rate);
 		cout << "fare without discount: " << c.calculateFare(dist) << endl;
 		cout << "Fare with long-term discount:" << c.calculateFare(dist, day) << endl;
-	}*/
+	}
 
 	return 0;
 }

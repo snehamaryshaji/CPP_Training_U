@@ -51,9 +51,16 @@ public:
 	void disply()
 	{
 		cout << "Tech Lead Info :" << endl;
-		cout << "EmpId: " <<developer::this-> empid << endl;
+		cout << "EmpId: " <<developer::empid << endl;
 		cout << "Name : " << developer::name << endl;
 		cout << "salary based on coding" << developer::calculateSalary(this->codHours);
 		cout << "salary based on coding+team " <<calculateSalary(this->codHours,this->size);
 	}
 };
+
+int main()
+{
+	techlead s(5, 501, "sneha", 120);
+	s.disply();
+	return 0;
+}
