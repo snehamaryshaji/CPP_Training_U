@@ -29,6 +29,7 @@ public:
 };
 class manager : public Employee
 {
+protected:
 	int size;
 public:
 	manager(int size, int empid, string name) :Employee(empid, name)
@@ -50,8 +51,8 @@ public:
 	void disply()
 	{
 		cout << "Tech Lead Info :" << endl;
-		cout << "EmpId: " <<this-> empid << endl;
-		cout << "Name : " << this->name << endl;
+		cout << "EmpId: " <<developer::this-> empid << endl;
+		cout << "Name : " << developer::name << endl;
 		cout << "salary based on coding" << developer::calculateSalary(this->codHours);
 		cout << "salary based on coding+team " <<calculateSalary(this->codHours,this->size);
 	}
