@@ -25,10 +25,10 @@ public:
 		}
 		return expense;
 	}
-	void disply(int distance, int days)
+	void disply(int dist, int days)
 	{
-		cout << "fare without discount: " << c.calculateFare(dist) << endl;
-		cout << "Fare with long-term discount:" << c.calculateFare(dist, days) << endl;
+		cout << "fare without discount: " << calculateFare(dist) << endl;
+		cout << "Fare with long-term discount:" << calculateFare(dist, days) << endl;
 	}
 
 };

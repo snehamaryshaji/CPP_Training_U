@@ -46,8 +46,7 @@ class techlead :public developer, manager
 	}
 public:
 	techlead(int size,int empid,string name,int codHours):developer(codHours, empid, name), manager(size, empid, name)
-
-	{}
+{}
 	void disply()
 	{
 		cout << "Tech Lead Info :" << endl;
