@@ -2,7 +2,7 @@
 using namespace std;
 class vehicle
 {
-protected:
+//protected:
 	int price;
 protected:
 	void dispveh()
@@ -55,7 +55,7 @@ public:
 		this->gear = gear;
 	}
 };
-class audi :public car
+class audi :private car
 {
 	string model;
 public:
@@ -71,7 +71,7 @@ public:
 		cout << "model " << this->model << endl;
 	}
 };
-class yemaha :public motorcycle
+class yemaha :private motorcycle
 {
 	string make;
 public:
