@@ -14,7 +14,7 @@ public:
 	}
 	void file_op()
 	{
-		ofstream fout("emp.txt");
+		ofstream fout("empy.txt");
 		if (!fout.is_open()) 
 		{
 			cerr << "Error opening file!" << endl;
@@ -22,9 +22,10 @@ public:
 		}
 		fout << "name " << name << endl;
 		fout << "phone number" << ph << endl;
+		
 		fout.close();
-		ifstream fin("emp.txt");
-		if (!fout.is_open())
+		ifstream fin("empy.txt");
+		if (!fin.is_open())
 		{
 			cerr << "Error opening file!" << endl;
 			return;
@@ -41,6 +42,7 @@ public:
 int main()
 {
 	employee e("sneha", 98765);
+	employee e1("snehamary", 98788);
 	e.file_op();
 	return 0;
 }
