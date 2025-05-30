@@ -15,22 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="upcast.cpp">
+    <ClCompile Include="roundrobin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="student.cpp">
+    <ClCompile Include="classround.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="virtualclss.cpp">
+    <ClCompile Include="filehandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="template.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="templateclss.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="calctempl.cpp">
+    <ClCompile Include="file.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

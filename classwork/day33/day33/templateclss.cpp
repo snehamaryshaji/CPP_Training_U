@@ -14,8 +14,8 @@ public:
 };
 
 int main() {
-    Box<int><float> intBox(10,67.0);
-    Box<string> strBox("Hello Template");
+    Box<int,float> intBox(10,67.0);
+    Box<string,int>strBox("Hello Template",90);
     Box<float> floatBox(10.44);
 
     intBox.show();
