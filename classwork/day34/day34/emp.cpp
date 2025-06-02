@@ -4,26 +4,29 @@
 using namespace std;
 class employee
 {
-	string name;
+	char name[20];
 	int ph;
 public:
-	employee(string n, int p)
+	employee(const char* n, int p)
 	{
-		name = n;
+		strcpy_s(name, n);
 		ph = p;
 	}
-	void file_op()
+	void file_write()
 	{
 		ofstream fout("empy.txt");
-		if (!fout.is_open()) 
+		if (!fout.is_open())
 		{
 			cerr << "Error opening file!" << endl;
 			return;
 		}
 		fout << "name " << name << endl;
 		fout << "phone number" << ph << endl;
-		
+
 		fout.close();
+	}
+	void file_read()
+	{
 		ifstream fin("empy.txt");
 		if (!fin.is_open())
 		{
@@ -42,7 +45,8 @@ public:
 int main()
 {
 	employee e("sneha", 98765);
-	employee e1("snehamary", 98788);
-	e.file_op();
+	employee e2("snehamary", 98765);
+	e.file_write();
+	e2.file_write();
 	return 0;
 }

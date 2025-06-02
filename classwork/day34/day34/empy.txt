@@ -1,4 +1,2 @@
-name sneha
-phone number98765
-name sneha
+name snehamary
 phone number98765
