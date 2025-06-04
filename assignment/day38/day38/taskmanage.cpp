@@ -23,7 +23,7 @@ public:
 			--cursor;
 		}
 	}
-	void moveUp()
+	void movedown()
 	{
 		if (cursor != buffer.end())
 		{
@@ -36,10 +36,34 @@ public:
 			cout << x << endl;
 		}
 	}
+	void process(const string& input)
+	{
+		if (input.find("insert") == 0)
+		{
+			string line = input.substr(7);
+			insert(line);
+		}
+		else if (input == "up")
+			moveUp();
+		else if (input == "down")
+			movedown();
+		else if (input == "print")
+			print();
+
+	}
 
 
 };
 int main()
 {
+	textEditor t;
+	string command;
+	while (getline(cin, command))
+	{
+		if (command == "exit")
+			break;
+		t.process(command);
+	}
+
 	return 0;
 }
