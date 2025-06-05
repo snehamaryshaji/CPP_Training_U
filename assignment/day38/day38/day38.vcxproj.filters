@@ -21,5 +21,8 @@
     <ClCompile Include="batchwordprocessing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="commandtrack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

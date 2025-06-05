@@ -2,23 +2,24 @@
 #include<vector>
 #include<string>
 #include<algorithm>
+
 using namespace std;
+
+char toLowercase(char c)
+{
+	return tolower(c);
+}
+
 int main()
 {
-	vector<string>name;
-	string str;
-	
-	while (getline(cin, str))
+	vector<string> words = { "Apple", "banana", "apple", "Orange", "BANANA", "grape" };
+	for (string& word : words)
 	{
-		if (str == "exit")
-			break;
-		name.push_back(str);
+		transform(word.begin(), word.end(), word.begin(), tolower);
 	}
-	sort(name.begin(), name.end());
-	std::cout << "After sorting: ";
-	for (const auto& i : name)
-	{
-		cout << i << endl;
-	}
-	return 0;
+	sort(words.begin(), words.end());
+	words.erase(unique(words.begin(), words.end()), words.end());
+	for (string i : words)
+		cout << i << " ";
+	cout << endl;
 }
