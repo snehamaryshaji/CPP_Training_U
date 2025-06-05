@@ -15,22 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="roundrobin.cpp">
+    <ClCompile Include="map.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="classround.cpp">
+    <ClCompile Include="map2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="filehandler.cpp">
+    <ClCompile Include="multimaps.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="file.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="fileadv.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tom.cpp">
+    <ClCompile Include="map4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
