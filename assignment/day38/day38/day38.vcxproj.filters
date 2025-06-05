@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="taskmanage.cpp">
+    <ClCompile Include="testeditor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="batchwordprocessing.cpp">
@@ -25,6 +25,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="chatclean.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="recentcommandtracker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

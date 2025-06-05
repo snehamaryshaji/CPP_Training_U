@@ -130,7 +130,8 @@
     <ClCompile Include="batchwordprocessing.cpp" />
     <ClCompile Include="chatclean.cpp" />
     <ClCompile Include="commandtrack.cpp" />
-    <ClCompile Include="taskmanage.cpp">
+    <ClCompile Include="recentcommandtracker.cpp" />
+    <ClCompile Include="testeditor.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
   </ItemGroup>
