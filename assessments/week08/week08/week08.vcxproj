@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7d9cc654-0d82-4e83-b6a3-ba992f9ea78a}</ProjectGuid>
-    <RootNamespace>day39</RootNamespace>
+    <ProjectGuid>{7323cfab-95bc-4981-9446-59558e4f8e39}</ProjectGuid>
+    <RootNamespace>week08</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,14 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="file.h" />
-    <ClInclude Include="filemanager.h" />
-    <ClInclude Include="filetracker.h" />
+    <ClInclude Include="register.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="arithmetic.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="track.cpp" />
-    <ClCompile Include="track2.cpp" />
+    <ClCompile Include="microprocessor.cpp" />
+    <ClCompile Include="mov.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
