@@ -30,7 +30,7 @@ public:
 };
 class arithmetic :public Microprocessor {
 public:
-	arithmetic(string instruction) :Microprocessor(instruction) {
+	arithmetic(string instruction) :Microprocessor(instruction) {}
 	void ADD();
 	void SUB();
 	void MUL();
