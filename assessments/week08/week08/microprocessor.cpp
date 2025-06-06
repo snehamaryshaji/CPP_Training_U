@@ -55,11 +55,13 @@ void Microprocessor::disp()
 }
 int Microprocessor::get_memoryValue(int addr)
 {
-	return Memory[addr];
+	//return Memory[addr];
+	return Memory.at(addr);
 }
 void Microprocessor::set_memory_value(int add,int AX)
 {
-	Memory[add] = AX;
+	//Memory[add] = AX;
+	Memory.push_back(AX);
 }
 //void MOV::value_toAX()
 //{
