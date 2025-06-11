@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7323cfab-95bc-4981-9446-59558e4f8e39}</ProjectGuid>
-    <RootNamespace>week08</RootNamespace>
+    <ProjectGuid>{3cd5bb3e-a918-4f41-9d84-8b64b28d53bf}</ProjectGuid>
+    <RootNamespace>day43</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,16 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="register.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="arithmetic.cpp" />
-    <ClCompile Include="main.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="mainn.cpp" />
-    <ClCompile Include="microprocessor.cpp" />
-    <ClCompile Include="mov.cpp" />
+    <ClCompile Include="arraynge.cpp" />
+    <ClCompile Include="balanceque.cpp" />
+    <ClCompile Include="bracket.cpp" />
+    <ClCompile Include="history.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

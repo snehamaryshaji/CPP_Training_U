@@ -15,24 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="register.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="microprocessor.cpp">
+    <ClCompile Include="arraynge.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="bracket.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="arithmetic.cpp">
+    <ClCompile Include="balanceque.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mov.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mainn.cpp">
+    <ClCompile Include="history.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

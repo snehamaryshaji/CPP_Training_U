@@ -12,10 +12,10 @@ int main()
         cout << line << endl;
     }*/
     
-    ifstream file("instructions.txt",ios::in);
-   /* if (!file) {
+    ifstream input("instructions.txt",ios::in);
+    if (!input) {
         cerr << "Cannot open instructions.txt\n";
-    }*/
+    }
     char line[100];
     int pc = 1;
     while (file.getline(line, sizeof(line))) {

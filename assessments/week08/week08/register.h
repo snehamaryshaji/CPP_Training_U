@@ -11,6 +11,10 @@ class Microprocessor{
 public:
 
 	Microprocessor(string instruction):instruction(instruction){
+		AX = 0;
+		BX = 0;
+		CX = 0;
+		DX = 0;
 	}
 	//void getInstruction();
 	
