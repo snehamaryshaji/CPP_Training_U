@@ -7,7 +7,7 @@ const int n = 30;
 mutex m;
 void fiz()
 {
-	while (num <= n)
+	while (num < n)
 	{
 		m.lock();
 		if (num % 3 == 0 && num % 5 != 0)
@@ -20,7 +20,7 @@ void fiz()
 }
 void buz()
 {
-	while (num <= n)
+	while (num < n)
 	{
 		m.lock();
 		if (num % 5 == 0 && num % 3!= 0)
@@ -34,12 +34,12 @@ void buz()
 }
 void fizbuz()
 {
-	while (num <= n)
+	while (num < n)
 	{
 		m.lock();
-		if (num % 3 == 0 && num % 5 != 0)
+		if (num % 3 == 0 && num % 5 == 0)
 		{
-			cout << "fizbuzz" << endl;
+			cout << "fiz-buzz" << endl;
 			num++;
 		}
 		m.unlock();
@@ -48,12 +48,12 @@ void fizbuz()
 }
 void number()
 {
-	while (num <= n)
+	while (num < n)
 	{
 		m.lock();
 		if (num % 3 != 0 && num % 5 != 0)
 		{
-			cout << num<< endl;
+			cout <<num<< endl;
 			num++;
 		}
 		m.unlock();

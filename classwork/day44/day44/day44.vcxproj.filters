@@ -48,5 +48,14 @@
     <ClCompile Include="prg7.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ass1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input.txt" />
   </ItemGroup>
 </Project>
