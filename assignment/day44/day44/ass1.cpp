@@ -18,7 +18,6 @@ protected:
 public:
     User(string username):username(username){}
     virtual void login() = 0; 
-    virtual ~User() {} 
 };
 class Buyer : public User {
 public:
