@@ -1,11 +1,12 @@
 #pragma once
 #include<iostream>
+#include<vector>
 using namespace std;
-class user
-{
-	string name;
-	string password;
+class User {
 public:
-	user(string name, string password):name(name),password(password){}
-
+    string username;
+    string password;
+    bool signup();
+    bool login();
 };
+
