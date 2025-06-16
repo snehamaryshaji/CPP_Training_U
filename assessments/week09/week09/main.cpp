@@ -139,6 +139,14 @@ public:
             customer.OUTcallwithNTW = r.duration;
         }
     }
+    void print()
+    {
+        cout << "customer data" << endl;
+        for (const auto& entry : customerData)
+        {
+            cout << entry.first << endl;
+        }
+   }
 };
 int main()
 {
